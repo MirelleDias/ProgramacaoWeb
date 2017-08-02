@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="cadastrar.php" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome"/>
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco"/>
+            </div>
+            <div>
+                <label for="estado">Estado:</label>
+                <select name="estado">
+                    <option>Paraíba</option>
+                    <option>Pernambuco</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Sul</option>
+                </select>
+            </div>
+            <div>
+                <label for="sexo">Sexo:</label>
+                <input type="radio" name="sexo" value="Masculino"> Masculino
+                <input type="radio" name="sexo" value="Feminino"> Feminino
+            </div>
+            <div>
+                <label for="materias">Matérias Favoritas</label>
+                <input type="checkbox" name="Portugues"> Português
+                <input type="checkbox" name="Matematica"> Matemática
+                <input type="checkbox" name="Historia"> História
+                <input type="checkbox" name="Java"> Java
+                <input type="checkbox" name="ProgramacaoWeb"> Programação Web
+            </div>
+            <div>
+                <label for="mensagem">Resumo de suas habilidades:</label>
+                <textarea name="mensagem"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
